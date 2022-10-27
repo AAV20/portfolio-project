@@ -10,7 +10,7 @@ btn.addEventListener('click',()=>{
       btn.style = 'background:black;color:white;'
   }
 
-})
+});
 
 // const btn = document.querySelector('.sw-btn')
 // btn.addEventListener('click',()=>{
