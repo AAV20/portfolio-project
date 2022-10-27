@@ -16,7 +16,7 @@ body{
     height: 750px;
     left: 0px;
     top: 0px;
-    background: #FF7315;
+    background: #212121;
     border-radius: 0px 15px 15px 15px;
 }
 
@@ -404,7 +404,7 @@ nav i{
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    color: #333;
+    color: #444;
 }
 
 .w-paragraph3{
