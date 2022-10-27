@@ -11,7 +11,7 @@ body{
 }
 
 .header-container{
-    position: absolute;
+    position: relative;
     width: 84px;
     height: 750px;
     left: 0px;
