@@ -7,15 +7,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="media.css"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <h4 class="logo">Logo</h4>
-            <nav>
+        <div class="header-container" data-aos="fade-right">
+            <div class="logo">
+                <h4>Logo</h4>
+            </div>
+            <nav class="nav" id="nav">
                 <i class="fa-sharp fa-solid fa-house"></i>
                 <i class="fa-solid fa-user-tie"></i>
                 <i class="fa-sharp fa-solid fa-bag-shopping"></i>
@@ -29,8 +38,8 @@
             <div class="darkmod-change">
                 <button class="sw-btn">Dark</button>
             </div>
-            <div class="burger-menu">
-                <i class="fa-solid fa-bars"></i>
+            <div id="b-menu" class="burger-menu">
+                <img id="nav-bars" src="./images/NAV.svg" alt="close">
             </div>
         </div>
     </header>
@@ -38,7 +47,7 @@
     <!-- main-container -->
 
     <main>
-        <div class="main-container">
+        <div class="main-container" data-aos="fade-right">
             <div class="main-secound-cont">
                 <h4 class="main-cont-1">Hi!</h4>
                 <h1 class="first-name">I’m Artur Hayrapetyan.
@@ -57,11 +66,11 @@
                             <a href="#" class="secound-link">Download CV</a>
                         </div>
             </div>
-            <div class="img-mean-block2">
+            <div class="img-mean-block2" data-aos="fade-right">
                 <img src="./images/Image-mean.png" alt="photo">
             </div>
         </div>
-        <div class="main-container2">
+        <div class="main-container2" data-aos="fade-down">
             <div class="img-block3">
                 <img src="./images/Transparent zoomed 1.svg" alt="photo">
             </div>
@@ -76,8 +85,8 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <p class="three-paragraph">Positive Review’s</p>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <p class="three-paragraph positiv">Positive Review’s</p>
                     </div>
                 </div>
                 <div class="main-cont-text2">
@@ -91,31 +100,31 @@
 
 <!-- main-container2 -->
 
-        <div class="center-cont">
+        <div class="center-cont" data-aos="fade-down">
             <h2 class="logo3">Why Hire Me?</h2>
             <div class="vectors">
-                <div class="div-block">
+                <div class="div-block" data-aos="fade-down">
                     <div class="picture">
                         <img src="./images/Group.png" alt="fhoto">
                     </div>
                     <h4 class="comunicativ">Communicative</h4>
                     <p class="comun-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
             </div>
-            <div class="div-block">
+            <div class="div-block" data-aos="fade-down">
                 <div class="picture">
                     <img src="./images/Group (1).png" alt="photo">
                 </div>
                 <h4 class="comunicativ">Professional</h4>
                 <p class="comun-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
             </div>
-            <div class="div-block">
+            <div class="div-block" data-aos="fade-down">
                 <div class="picture">
                     <img src="./images/Group 242.png" alt="photo">
                 </div>
                 <h4 class="comunicativ">Collaborative​</h4>
                 <p class="comun-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
             </div>
-            <div class="div-block">
+            <div class="div-block" data-aos="fade-down">
                 <div class="picture">
                     <img src="./images/Group 243.png" alt="photo">
                 </div>
@@ -127,7 +136,7 @@
 
         <!-- Portfolio-container -->
 
-        <div class="portfolio-content">
+        <div class="portfolio-container" data-aos="fade-down">
             <div class="portfolio-header">
                 <h2 class="logo4">Portfolio</h2>
                 <a href="#" class="portfolio-link">see more<i class="fa-solid fa-right-long"></i></a>
@@ -142,63 +151,35 @@
             </div>
         </div>
 
-        <!-- Client-content -->
+        <!-- Client-container -->
 
         <div class="clients">
             <div class="clients-header">
                 <h2 class="logo5">I’m Loved By Users And Clients Worldwide</h2>
-                <div class="white-blocks">
-                    <div class="w-block1">
-                        <div class="w-block-content">
-                            <p class="w-paragraph1">One of the best additions to our feedback loop has been the company-wide adoption of Fellow.</p>
-                        <div class="whait-min-cont1">
-                            <div class="mini-picture1">
-                                <img src="./images/Picture.png" alt="">
-                                <p class="w-paragraph">Ronald Richards<br><span class="sp1">UI/UX Designer</span></p>
-                            </div>
-                            <div class="w-icons1">
-                                <p class="w-number"><span class="sp3">4.5</span></p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                            </div>
-                        </div>
-                        </div>
+            </div>
+            <div class="slider">
+            <button class="left"><img src="./images/left.png"></button>
+                <div class="white-blocks" data-aos="fade-up">
+                    <div class="slide-img active">
+                        <img src="./images/ransford-quaye-DzAFv1iVMGg-unsplash.jpg" class="project-img">
                     </div>
-                    <div class="w-block2">
-                        <div class="w-block-content2">
-                            <p class="w-paragraph3">One of the best additions to our feedback loop has been the company-wide adoption of Fellow.</p>
-                        <div class="whait-min-cont2">
-                            <div class="mini-picture2">
-                                <img src="./images/Picture (1).png" alt="">
-                                <p class="w-paragraph">Ronald Richards<br><span class="sp2">UI/UX Designer</span></p>
-                            </div>
-                            <div class="w-icons2">
-                                <p class="w-number"><span class="sp4">4.5</span></p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                     </div>
+                    <div class="slide-img">
+                        <img src="./images/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" class="project-img" alt="">
+                    </div>
+                    <div class="slide-img">
+                        <img src="./images/courtney-cook-TSZo17r3m0s-unsplash.jpg" class="project-img" alt="">
+                    </div>
+                    <div class="slide-img">
+                        <img src="./images/julian-wan-WNoLnJo7tS8-unsplash.jpg" class="project-img" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="min-divs">
-                <div class="first-div"></div>
-                <div class="m-div1"></div>
-                <div class="m-div1"></div>
-                <div class="m-div1"></div>
+                <button class="right"><img src="./images/right.png"></button>     
             </div>
         </div>
 
         <!-- price-container -->
 
-        <div class="price-container">
+        <div class="price-container" data-aos="fade-down">
             <h2 class="logo6">Price plans</h2>
             <div class="price-blocks">
                 <div class="price-block1">
@@ -262,7 +243,7 @@
 
         <!-- blog-container -->
 
-        <div class="blog-container">
+        <div class="blog-container" data-aos="fade-down">
             <div class="blog-header">
                 <h2 class="logo8">Blog</h2>
                 <a href="#" class="b-link">see more<i class="fa-solid fa-right-long"></i></a>
@@ -309,7 +290,7 @@
         </div>
     </main>
     <footer>
-        <div class="footer-container">
+        <div class="footer-container" data-aos="fade-down">
             <div class="footer-content">
                 <a href="https://arthur.hayrapetyan.90@gmail.com" target="_blank" class="footer-head-text"><i class="fa-solid fa-envelope"></i>arthur.hayrapetyan.90@gmail.com</a>
                 <p class="footer-paragraph">© Copyright 2021 | mmrz315</p>
@@ -323,6 +304,12 @@
             </div>
         </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
 </body>
 </html>
