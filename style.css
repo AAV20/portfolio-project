@@ -59,7 +59,7 @@ body{
     color: #F9F9F9;
 }
 
-nav{
+.nav{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -438,7 +438,7 @@ nav i{
 .slider{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 /* price-container */
 
